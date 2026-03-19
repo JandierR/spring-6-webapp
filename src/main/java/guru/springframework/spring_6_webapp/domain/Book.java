@@ -55,6 +55,16 @@ public class Book {
     }
 
     @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", authors=" + authors +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object object) {
         if (object == null || getClass() != object.getClass()) return false;
 

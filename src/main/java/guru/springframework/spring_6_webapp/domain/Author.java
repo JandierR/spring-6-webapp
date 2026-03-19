@@ -52,6 +52,15 @@ public class Author {
         this.lastName = lastName;
     }
 
+    @Override
+    public String toString() {
+        return "Author{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", books=" + books +
+                '}';
+    }
 
     @Override
     public boolean equals(Object object) {
